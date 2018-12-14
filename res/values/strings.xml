@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FiindMeNew</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">FiindMe</string>
+    <string name="title_section2">Merchant</string>
+    <string name="title_section3">User</string>
+    <string name="title_activity_user_find">Fiind Deals</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="u_zip_code">Enter ZipCode</string>
+    <string name="u_current_time">Time</string>
+    <string name="u_category">Category</string>
+    <string name="btnSearch">Search</string>
+    <string name="title_deal_list">Deals</string>
+    <string name="title_deal_detail">Deal Detail</string>
+    <string name="button_json">Send JSON</string>
+    <string name="edit_json">Edit</string>
+    <string name="text_json">Text</string>
+
+    <string-array name="u_category_arrays">
+        <item>Food</item>
+        <item>Health and Beauty</item>
+        <item>Auto</item>
+        <item>Entertainment</item>
+    </string-array>
+
+    <string name="title_activity_jsonlist">Fiind a Deal</string>
+    <string name="title_activity_jsonlist_view">Deals</string>
+    <string name="endtime"><b>End </b></string>
+    <string name="deal_id"><b>Deal: </b></string>
+    <string name="starttime"><b>Start: </b></string>
+    <string name="merchant_id"><b>Business </b>Business: </string>
+    <string name="status"><b>Status: </b></string>
+    <string name="title_activity_single_jsonitem">Deal Details</string>
+    <string name="button_confirm"><b>Buy!</b></string>
+    <string name="title_activity_user_confirm">UserConfirmActivity</string>
+    <string name="congratulation">Congratulations</string>
+    <string name="button_back">Back</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="title_activity_main_page">MainPageActivity</string>
+    <string name="button_user">User</string>
+    <string name="button_merchant">Merchant</string>
+    <string name="welcome">Welcome to <br>Fiind.me</br></string>
+    <string name="title_activity_mechant_landing">MechantLandingActivity</string>
+    <string name="button_create_deal">Create A Deal</string>
+    <string name="button_my_deals">My Deals</string>
+    <string name="button_alerts">Alerts</string>
+    <string name="title_activity_merchant_list_view">MerchantListViewActivity</string>
+    <string name="title_activity_merchant_create_deal">MerchantCreateDealActivity</string>
+    <string name="m_description">Description</string>
+
+    <string-array name="m_discount_arrays">
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="m_discount">Discount</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="btnMStartTime">Start Time</string>
+    <string name="btnMEndTime">End Time</string>
+    <string name="btnMEditStartTime">Edit</string>
+    <string name="btnMEditEndTime">Edit</string>
+    <string name="editEndTime">End Time</string>
+    <string name="editStartTime">Start Time</string>
+    <string name="title_activity_merchant_confirm_deal">MerchantConfirmDealActivity</string>
+    <string name="m_title">Title</string>
+    <string name="m_button_back">Back To Deals</string>
+    <string name="title_activity_merchant_single_deal">MerchantSingleDealActivity</string>
+    <string name="m_button_confirm">Confirm</string>
+    <string name="confirmation_code">Confirmation Code</string>
+    <string name="title_activity_jsonlist_view1">JSONListView1Activity</string>
+    <string name="title_activity_merchant_alert">MerchantAlertActivity</string>
+    <string name="button_create">Create Deal</string>
+
+</resources>

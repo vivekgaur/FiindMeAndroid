@@ -1,0 +1,54 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <!-- Name Label -->
+  <TextView android:id="@+id/m_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:textColor="#dc6800"/>
+  <!-- Description Label -->
+  <TextView android:id="@+id/m_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#acacac"/>
+  <TextView android:id="@+id/m_deal_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#acacac"/>
+  <!-- Time Label -->
+  <TextView android:id="@+id/m_starttime"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"/>
+  <TextView android:id="@+id/m_endtime"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"/>
+  <TextView android:id="@+id/m_status"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"/>
+  <EditText android:id="@+id/m_confirm_code"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:hint="@string/confirmation_code"
+      		android:textStyle="bold"/>
+  <Button
+        android:id="@+id/m_btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_button_confirm" />
+  <Button
+        android:id="@+id/m_btnBack"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="122dp"
+	    android:onClick="backToList"
+	    android:text="@string/button_back" />
+</LinearLayout>

@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MerchantCreateDealActivity" >
+
+    <EditText android:id="@+id/merchant_id"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"/>
+    <Button
+        android:id="@+id/btnMStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merchant_id"
+        android:layout_marginTop="20dp"
+        android:text="@string/btnMStartTime" />
+    <EditText android:id="@+id/editMStartTime"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/merchant_id"        
+        android:layout_marginTop="25dp"
+        android:text="@string/editStartTime"
+        android:layout_width="wrap_content"/>
+    <Button
+        android:id="@+id/btnMEditStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merchant_id"
+        android:layout_toRightOf="@+id/editMStartTime"
+        android:layout_marginTop="25dp"
+        android:text="@string/btnMEditStartTime" />
+    <Button
+        android:id="@+id/btnMEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMStartTime"
+        android:layout_marginTop="30dp"
+        android:text="@string/btnMEndTime" />
+    
+    <EditText android:id="@+id/editMEndTime"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="45dp"
+        android:text="@string/editEndTime"
+        android:layout_below="@+id/editMStartTime" 
+        android:layout_width="wrap_content"/>
+    <Button
+        android:id="@+id/btnMEditEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editMEndTime"
+        android:layout_below="@+id/btnMStartTime"
+        android:layout_marginTop="45dp"
+        android:text="@string/btnMEditEndTime" />
+   
+    <!--  
+    <TimePicker
+        android:id="@+id/m_start_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/merchant_id"
+        android:layout_below="@+id/merchant_id"
+        android:layout_marginTop="27dp" />
+    
+    <TimePicker
+        android:id="@+id/m_end_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/merchant_id"
+        android:layout_below="@+id/m_start_timePicker"
+        android:layout_marginTop="37dp" />
+	-->
+
+    
+    <EditText
+        android:id="@+id/m_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/m_description"
+        android:layout_alignLeft="@+id/m_description"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/m_title" />
+
+    <EditText
+        android:id="@+id/m_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMSubmit"
+        android:layout_alignLeft="@+id/btnMSubmit"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:lines="2"
+        android:inputType="textMultiLine"
+        android:hint="@string/m_description" />
+    <Spinner
+        android:id="@+id/m_discount"
+        style="@style/AppBaseTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMEndTime"
+        android:layout_centerVertical="true"
+        android:entries="@array/m_discount_arrays"
+        android:hint="@string/m_discount"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+    
+    <Button
+        android:id="@+id/btnMSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMEndTime"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btnSubmit" />
+    
+    
+</RelativeLayout>

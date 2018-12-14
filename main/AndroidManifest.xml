@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fiindmenew"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.example.fiindmenew.GlobalVariables"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.fiindmenew.MainPageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.UserLoginActivity"
+            android:label="@string/title_activity_user_find"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.UserFindActivity"
+            android:label="@string/title_activity_user_find"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MerchantLoginActivity"
+            android:label="@string/title_activity_merchant_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.DealListActivity"
+            android:label="@string/title_deal_list" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.DealDetailActivity"
+            android:label="@string/title_deal_detail"
+            android:parentActivityName=".DealListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DealListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.JSONListActivity"
+            android:label="@string/title_activity_jsonlist" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.JSONListViewActivity"
+            android:label="@string/title_activity_jsonlist_view" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.SingleJSONItemActivity"
+            android:label="@string/title_activity_single_jsonitem" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.UserConfirmActivity"
+            android:label="@string/title_activity_user_confirm" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MainTabActivity"
+            android:label="@string/title_activity_main_tab" >
+        </activity>
+        <!--
+        activity
+            android:name="com.example.fiindmenew.MainPageActivity"
+            android:label="@string/title_activity_main_page" >
+        </activity
+        -->
+        <activity
+            android:name="com.example.fiindmenew.MerchantLandingActivity"
+            android:label="@string/title_activity_mechant_landing" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MerchantListViewActivity"
+            android:label="@string/title_activity_merchant_list_view" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MerchantCreateDealActivity"
+            android:label="@string/title_activity_merchant_create_deal" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MerchantConfirmDealActivity"
+            android:label="@string/title_activity_merchant_confirm_deal" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MerchantSingleDealActivity"
+            android:label="@string/title_activity_merchant_single_deal" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.JSONListView1Activity"
+            android:label="@string/title_activity_jsonlist_view1" >
+        </activity>
+        <activity
+            android:name="com.example.fiindmenew.MerchantAlertActivity"
+            android:label="@string/title_activity_merchant_alert" >
+        </activity>
+    </application>
+
+</manifest>
